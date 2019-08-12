@@ -1,0 +1,18 @@
+service: koop-serverless-example
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: us-east-1
+
+functions:
+  searchDatasets:
+    handler: src/index.handler
+    events:
+      - http:
+        path: /datasets/rest/info
+        method: get
+        cors: true
