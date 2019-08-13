@@ -9,10 +9,27 @@ provider:
   region: us-east-1
 
 functions:
-  searchDatasets:
+  getData:
     handler: src/index.handler
     events:
       - http:
-        path: /datasets/rest/info
-        method: get
-        cors: true
+          path: /my-provider/{host}/FeatureServer/0
+          method: get
+          cors: true
+          request:
+            parameters:
+              paths:
+                host: true
+  queryData:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /my-provider/{host}/FeatureServer/0/query
+          method: get
+          cors: true
+          request:
+            parameters:
+              querystrings:
+                where: false
+              paths:
+                host: true
