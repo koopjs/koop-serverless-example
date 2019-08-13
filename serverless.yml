@@ -6,10 +6,9 @@ plugins:
 provider:
   name: aws
   runtime: nodejs10.x
-  region: us-east-1
 
 functions:
-  getData:
+  get-data:
     handler: src/index.handler
     events:
       - http:
@@ -20,7 +19,7 @@ functions:
             parameters:
               paths:
                 host: true
-  queryData:
+  query-data:
     handler: src/index.handler
     events:
       - http:

@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "deploy": "sls deploy",
+    "remove": "sls remove",
     "start": "sls offline start"
   },
   "dependencies": {
