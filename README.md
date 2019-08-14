@@ -80,7 +80,7 @@ npm run start
 
 ### Deploy
 
-Deploy the Lambda function and the API in one command:
+Deploy Lambda functions and APIs with one command:
 
 ```
 npm run deploy
