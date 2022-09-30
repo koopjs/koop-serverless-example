@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "koop": "^3.13.0",
+    "koop": "^3.19.1",
     "serverless-http": "^2.0.2"
   },
   "devDependencies": {
