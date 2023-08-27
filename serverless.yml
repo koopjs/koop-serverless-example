@@ -12,7 +12,7 @@ functions:
     handler: src/index.handler
     events:
       - http:
-          path: /my-provider/{host}/FeatureServer/0
+          path: /pg-provider/{host}/FeatureServer/0
           method: get
           cors: true
           request:
@@ -23,7 +23,7 @@ functions:
     handler: src/index.handler
     events:
       - http:
-          path: /my-provider/{host}/FeatureServer/0/query
+          path: /pg-provider/{host}/FeatureServer/0/query
           method: get
           cors: true
           request:

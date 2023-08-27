@@ -57,7 +57,7 @@ functions:
     events:
       # The "http" event defines an API at the API Gateway
       - http:
-          path: /my-provider/{host}/FeatureServer/0
+          path: /pg-provider/{host}/FeatureServer/0
           method: get
           request:
             # Each parameter and query string need to be explicitly specified
