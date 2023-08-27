@@ -1,1 +1,10 @@
-{ "port": 8080 }
+{
+  "port": 8080,
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "gistest",
+    "user": "postgres",
+    "password": "password"
+  }
+}
