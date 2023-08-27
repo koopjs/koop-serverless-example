@@ -41,14 +41,14 @@ Since the Koop app is going to run as a Lambda function, you may need to reconsi
 
 ## serverless.yml
 
-The Lambda function is configured with the file `servless.yml`. The configuration shows how to configure a lambda function for API Gateway events.
+The Lambda function is configured with the file `serverless.yml`. The configuration shows how to configure a lambda function for API Gateway events.
 
 ```yaml
 service: koop-serverless-example
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs14.x
 
 functions:
   # Each API should have one corresponding function
@@ -94,6 +94,6 @@ Remove all deployed Lambda functions and APIs:
 npm run remove
 ```
 
-## Lincese
+## License
 
 MIT
